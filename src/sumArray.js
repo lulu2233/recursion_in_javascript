@@ -18,4 +18,11 @@
 
 var sumArray = function(arr) {
   // Your code here
+
+  if (arr.length === 0 || arr === null)
+    return 0;
+  else {
+    var value = arr.shift();
+    return value + sumArray(arr);
+  }
 };
